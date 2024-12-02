@@ -77,13 +77,13 @@
           <address>
             <ul class="mobile-menu-contacts">
               <li class="mm-contacts">
-                <a href="mailto:info@devstudio.com" class="mail-send"
-                  >info@devstudio.com</a
+                <a href="tel:+110001111111" class="mm-contacts-link"
+                  >+11 (000) 111-11-11</a
                 >
               </li>
               <li class="mm-contacts">
-                <a href="tel:+110001111111" class="mail-send"
-                  >+11 (000) 111-11-11</a
+                <a href="mailto:info@devstudio.com" class="mm-contacts-link-current"
+                  >info@devstudio.com</a
                 >
               </li>
             </ul>
@@ -455,17 +455,36 @@
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="portfolio-block">
-                <img
-                  srcset="
-                    ./images/portfolio/img-6.jpg        1x,
-                    ./images/portfolio/img-6_mob@2x.jpg 2x
-                  "
-                  src="./images/portfolio/img-6.jpg"
-                  alt="Banking App"
-                  width="360"
-                  height="300"
-                  class="portfolio-image"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/img-6.jpg         1x,
+                      ./images/portfolio/img-6_desk2@x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-6.jpg    1x,
+                      ./images/portfolio/img-6_tab@2x 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-6@.jpg        1x,
+                      ./images/portfolio/img-6_mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/portfolio/img-6.jpg"
+                    alt="Banking App"
+                    width="360"
+                    height="300"
+                    class="portfolio-image"
+                  />
+                </picture>
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -754,8 +773,8 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="privacy"><span>Privacy Policy</span></a>
+             <span>I accept the terms and conditions of the
+              <a href="" class="privacy">Privacy Policy</span></a>
             </label>
           </div>
           <button class="form-button-send" type="submit">Send</button>
