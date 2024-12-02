@@ -122,6 +122,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    padding-top: 16px;
   }
   .mail-send {
     display: block;
@@ -172,6 +173,7 @@ button {
     flex-direction: row;
     align-items: center;
     gap: 40px;
+    padding-top: 0;
   }
   .mail-send {
     font-size: 16px;
@@ -321,6 +323,57 @@ button {
     ),
     url(../images/people-office.jpg);
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office_mob@2x.jpg);
+  }
+  @media only screen and (min-width: 768px) {
+    .main-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office_tab@1x.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .main-section {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url(../images/people-office_tab@2x.jpg);
+      }
+    }
+  }
+  @media only screen and (min-width: 1158px) {
+    .main-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office_desk@1x.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .main-section {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url(../images/people-office_desk@2x.jpg);
+      }
+    }
+  }
+}
 .main-section-name {
   font-weight: 700;
   font-size: 36px;
@@ -371,7 +424,7 @@ button {
     gap: 48px;
   }
   .main-section {
-    max-width: 1158px;
+    max-width: 1440px;
     height: 600px;
     padding-top: 188px;
     padding-bottom: 188px;
