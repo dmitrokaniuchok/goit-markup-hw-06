@@ -596,7 +596,7 @@ button {
   }
 }
 @media only screen and (min-width: 1158px) {
-  .team-hide {
+  .team {
     padding: 120px 0;
   }
 }
@@ -730,7 +730,6 @@ button {
   align-items: center;
   justify-content: center;
   margin-bottom: 72px;
-  /* margin-right: 120px; */
 }
 .logo-one {
   font-family: "Raleway", sans-serif;
@@ -919,6 +918,9 @@ button {
   }
   .input-field {
     opacity: 1;
+  }
+  .footer {
+    padding: 100px 0;
   }
 }
 
